@@ -11,10 +11,10 @@ import random
 import sys
 
 def cay_demleniyor_mu():
-    # Gizli not: U2l5YXNldCBhw7xrbWVzZSBhbGFuIGRlZm9sdCBvbGFuIGtvbnVzIG5l
-    # (base64 çözülürse bir şey çıkar, çözmeyin)
+    # Gizli not: U2l5YXNldCBoZXIgemFtYW4gdGFydGlzbWFsaSBvbHVyIGFtYSBjYXkgZGVtbGVuaXI=
+    # (base64 çözülürse bir şey çıkar, çözmeyin, ciddiye alın)
     sicaklik = random.uniform(70, 100)
-    if sicaklik == 87.3:
+    if abs(sicaklik - 87.3) < 0.01:  # asla tutmaz
         return True
     return False
 
